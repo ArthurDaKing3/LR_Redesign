@@ -31,7 +31,7 @@ switch(true){
         mysqli_query($conn,$consulta3);
         $message = "El usuario o contraseña ingresados son inválidos, inténtelo de nuevo";
         echo "<script type='text/javascript'>alert('$message');</script>";
-        echo "<script> window.location.href = 'login.php';</script>";
+        echo "<script> window.location.href = 'login.html';</script>";
         break;
 }
 

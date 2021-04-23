@@ -33,26 +33,26 @@ switch(true){
     case ($verfilas >= 1):
         $message = "El correo ingresado ya esta registrado";
         echo "<script type='text/javascript'>alert('$message');</script>";
-        echo "<script> window.location.href = 'login.php';</script>";
+        echo "<script> window.location.href = 'login.html';</script>";
         break;
     
     case ($verfilas2 >= 1):
         $message = "El nombre de usuario ya esta registrado";
         echo "<script type='text/javascript'>alert('$message');</script>";
-        echo "<script> window.location.href = 'login.php';</script>";
+        echo "<script> window.location.href = 'login.html';</script>";
         break;
 
     case ($contraseña != $ccontraseña):
         $message = "Las contraseñas ingresadas no coinciden";
         echo "<script type='text/javascript'>alert('$message');</script>";
-        echo "<script> window.location.href = 'login.php';</script>";
+        echo "<script> window.location.href = 'login.html';</script>";
         break;
 
     default:
         mysqli_query($conn,$consulta3);
         $message = "Registro exitoso";
         echo "<script type='text/javascript'>alert('$message');</script>";
-        echo "<script> window.location.href = 'login.php';</script>";
+        echo "<script> window.location.href = 'login.html';</script>";
         break;
 }
 
