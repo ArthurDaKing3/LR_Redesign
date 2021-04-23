@@ -24,7 +24,7 @@ $verfilas = mysqli_num_rows($ejecutarconsulta);
 /*SWITCH QUE VALIDA SI EL USUARIO Y CONTRASEÑA SON CORRECTOS CON LOS REGISTROS DE LA BASE DE DATOS*/
 switch(true){
     case ($verfilas >= 1):
-        echo "<script> window.location.href = 'index.html';</script>";
+        echo "<script> window.location.href = '../index.html';</script>";
         break;
 
     default:
