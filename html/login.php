@@ -7,16 +7,16 @@ $conexion = mysqli_connect('localhost','root','LASE2711del2001','bd_stress') or 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../scss/styles.css">
     <link rel="stylesheet" href="css/form.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <title>Login & Register</title>
 </head>
 <body class="body">
     
     <div class= "formlr">
-        <a href="index.html">
-            <img src="./assets/images/logo/LATAM_blanco.png" class="logoform">
+        <a href="../index.html">
+            <img src="../assets/images/logo/LATAM_blanco.png" class="logoform">
         </a>
         <div class="form-box">
             <div class="btn-box">
