@@ -1017,6 +1017,13 @@ body {
   padding-left: 14%;
 }
 
+.carrusel-img {
+  width: 600px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .carrusel-item {
   background-color: black;
   width: 600px;
@@ -1025,18 +1032,31 @@ body {
   margin-right: 100px;
   display: inline-block;
   cursor: pointer;
-  -webkit-transition: 450ms all;
-  transition: 450ms all;
+  -webkit-transition: 450ms all ease;
+  transition: 450ms all ease;
   -webkit-transform-origin: center left;
           transform-origin: center left;
   position: relative;
 }
 
-.carrusel-img {
-  width: 600px;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.carrusel-subtitle {
+  position: absolute;
+  top: 0;
+  font-size: 40px;
+  font-family: 'Bebas Neue';
+  color: transparent;
+  padding: 20px;
+}
+
+.carrusel-text {
+  position: absolute;
+  top: 0;
+  font-family: "BebasNeue";
+  color: transparent;
+  height: 50%;
+  width: 300px;
+  margin-left: 280px;
+  margin-top: 340px;
 }
 
 .carrusel-item:hover ~ .carrusel-item {
@@ -1045,30 +1065,12 @@ body {
 }
 
 .carrusel_container:hover .carrusel-item:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .carrusel-item:hover > .carrusel-img {
-  opacity: 50%;
-}
-
-.carrusel-subtitle {
-  position: absolute;
-  font-size: 40px;
-  font-family: 'Bebas Neue';
-  color: transparent;
-  padding: 20px;
-}
-
-.carrusel-text {
-  font-family: "BebasNeue";
-  color: transparent;
-  height: 50%;
-  width: 300px;
-  position: absolute;
-  margin-left: 280px;
-  margin-top: 340px;
+  opacity: 0.5;
 }
 
 .carrusel-item:hover > .carrusel-subtitle {
