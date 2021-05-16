@@ -3,15 +3,16 @@
     padding-top: 80px;
 }
 
-.carrusel-title{
+.vd-title{
     font-family: $font-title;
     font-size: 60px;
     margin-top: 60px;
     margin-left: 250px;
     display:flex;
     position: absolute;
-    color: white;
+    color: #ece8e1;
     z-index: 1;
+    transition: 450ms all ease;
 }
 
 .vd-wrapper{
@@ -19,6 +20,57 @@
     height: 385px;
     overflow: hidden;
     background-color: black;
+    position: relative;
+}
+
+.vd-wrapper::after{
+    position: absolute;
+    content: '';
+    display: flex;
+    background-color: #ece8e1;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    top: 100%;
+    transform: skewY(20deg);
+}
+
+.vd-menu{
+    position: absolute;
+    display: flex;
+    background-color: #ece8e1;
+    width: 300px;
+    height: 385px;
+    z-index: 1;
+    top: 0px;
+    right: -300px;
+    transition: 450ms all ease;
+    opacity: 85%;
+    justify-content: space-evenly;
+}
+
+.vd-menu ul{
+    font-family: 'BebasNeue';
+    font-size: 15px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30%;
+    line-height: 3em;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: right;
+    
+}
+
+.vd-wrapper:hover > .vd-menu{
+    right: 0%;
+}
+
+.vd-wrapper:hover > .vd-title{
+    transform: scale(1.1);
 }
 
 .vd{
@@ -167,7 +219,45 @@
 }
 
 .carrusel-item:hover > .carrusel-banner > .carrusel-text{
-    color: white;
+    color: #ece8e1;
+}
+
+.section-2{
+    width: 100%;
+    height: 880px;
+    background-color: $danger-color;
+}
+
+.section-2::before{
+    position: absolute;
+    content: '';
+    display: flex;
+    background-color: $danger-color;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    top: 141.5%;
+    right: 0px;
+    transform: skewY(-20deg);
+}
+
+.section-3{
+    width: 100%;
+    height: 880px;
+    background-color: #ece8e1;
+}
+
+.section-3::before{
+    position: absolute;
+    content: '';
+    display: flex;
+    background-color:#ece8e1;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    top: 235%;
+    left: 0px;
+    transform: skewY(20deg);
 }
 
 ::-webkit-scrollbar-thumb{
